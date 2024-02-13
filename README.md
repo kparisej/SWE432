@@ -1,4 +1,4 @@
-# CS432 - [Name of Project]
+# SWE432 - [Name of Project]
 A web application for ...
 
 ## Description
