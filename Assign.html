@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+	background-color: grey;
+}
+a {
+	text-decoration:none;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr:nth-child(odd) {
+  background-color: #bcbcbc;
+}
+</style>
+   <meta charset="utf-8">
+   <title>Hello World</title>
+   <link rel="stylesheet" href="css/maincss.css" />
+</head>
+<body id="top" style=>
+	<section class="container">
+	 <div class="green a1"></div>
+	 <div class="green a2">
+		<nav>
+			<ul style="list-style-type:none;">
+				<li onclick="document.location='#'">Producer</li>
+				<li onclick="document.location='#'">Manager</li>
+				<li onclick="document.location='#'">DJ</li>
+			</ul> 
+		</nav>
+	</div>
+	 <div class="green a3"></div>
+	 <div class="greyer a4">
+		<h1>Assign DJ Timeslot</h1>
+		<nav>
+			<ul style="list-style-type:none;">
+				<li onclick="document.location='report.html'">Run a Report</li>
+				<li onclick="document.location='assign.html'">Assign DJ Timeslot</li>
+			</ul> 
+		</nav>
+	 </div>
+	 <div class="b1"></div>
+	 <div class="b2"></div>
+	 <div class="b3" id="form">
+		<form name="date form"> <!--onsubmit="return validateForm()" method="post" action=""-->
+			<h1>Pick Date</h1>
+			<br>
+			<p>
+				<h2>Date:</h2>
+				<input type="date" id="start" name="date" value="2024-07-22" min="2024-01-01" max="2024-12-31" />
+			<input type="submit" value="Select Date">
+			</p>
+		</form>
+		<form name="assign form"> <!--onsubmit="return validateForm()" method="post" action=""-->
+			<br>
+			<p>
+				<h2>DJ:</h2>
+				<select name="DJ" required style="width:100%;max-width:70%;">
+					<option></option>
+					<option>DJ1</option>
+					<option>Really long DJ name for option number 2</option>
+					<option>DJ3</option>
+				</select>
+			</p>
+			<br>
+			<input type="submit" value="Assign DJ">
+		</form>
+	</div>
+	 <div class="b4">
+		<h1>Assignments</h1>
+		<br>
+		<table>
+		<tr>
+			<th>Time Slot</th>
+			<th>DJ</th>
+		</tr>
+		<tr>
+			<td>00:00-06:00</td>
+			<td>James masons long name</td>
+
+		</tr>
+		<tr>
+			<td>06:00-12:00</td>
+			<td>P2</td>
+
+		</tr>
+		<tr>
+			<td>12:00-18:00</td>
+			<td>P3</td>
+		</tr>
+		<tr>
+
+			<td>18:00-00:00</td>
+			<td>David</td>
+		</tr>
+		</table>
+	 </div>
+	</section>
+</body>
