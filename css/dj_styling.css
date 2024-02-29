@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 100px;
+}
+.mason-radio-header {
+  background-color: #046a38;
+  color: gold;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.header-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+}
+.dropdown {
+  margin-bottom: 20px;
+  position: relative;
+}
+.dropdown-button {
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.dropdown-button:hover {
+  background-color: #ddd;
+}
+.dropdown-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.dropdown-options a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  padding: 15px 30px;
+}
+.dropdown-options a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+.playlist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.playlist {
+  width: 500px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.playlist-content {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.playlist-content label {
+  display: block;
+  margin-bottom: 18px;
+}
+.playlist button {
+  background: #046a38;
+  color: gold;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.playlist button:hover {
+  background-color: #204e29;
+}
+
+/* Navigation Styling */
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+  text-align: center;
+}
+li {
+  display: inline-block;
+}
+li a {
+  display: block;
+  color: gold;
+  padding: 14px 16px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 10px;
+  width: 120px;
+  background-color: black;
+}
