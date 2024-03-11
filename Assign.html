@@ -17,6 +17,7 @@ tr:nth-child(odd) {
 </style>
    <meta charset="utf-8">
    <title>Hello World</title>
+   <script type="text/javascript" src="js/assign.js"></script>
    <link rel="stylesheet" href="css/maincss.css" />
 </head>
 <body id="top" style=>
@@ -44,20 +45,25 @@ tr:nth-child(odd) {
 	 <div class="b1"></div>
 	 <div class="b2"></div>
 	 <div class="b3" id="form">
-		<form name="date form"> <!--onsubmit="return validateForm()" method="post" action=""-->
+		<form name="assign form"> <!--onsubmit="return validateForm()" method="post" action=""-->
 			<h1>Pick Date</h1>
 			<br>
 			<p>
 				<h2>Date:</h2>
 				<input type="date" id="start" name="date" value="2024-07-22" min="2024-01-01" max="2024-12-31" />
-			<input type="submit" value="Select Date">
 			</p>
-		</form>
-		<form name="assign form"> <!--onsubmit="return validateForm()" method="post" action=""-->
 			<br>
 			<p>
+				<h2>Time Slot:</h2>
+				<select name="slot" required style="width:100%;max-width:70%;">
+					<option></option>
+					<option value = 1>0-6</option>
+					<option value = 2>6-12</option>
+					<option value = 3>12-18</option>
+					<option value = 4>18-0</option>
+				</select>
 				<h2>DJ:</h2>
-				<select name="DJ" required style="width:100%;max-width:70%;">
+				<select name="dj" required style="width:100%;max-width:70%;">
 					<option></option>
 					<option>DJ1</option>
 					<option>Really long DJ name for option number 2</option>
@@ -65,11 +71,13 @@ tr:nth-child(odd) {
 				</select>
 			</p>
 			<br>
-			<input type="submit" value="Assign DJ">
+			<input type="submit" value="Assign DJ" onclick="validateform()">
+			<input type="submit" value="Remove DJ" onclick="validateform()">
 		</form>
 	</div>
 	 <div class="b4">
 		<h1>Assignments</h1>
+		<h1 id="date title"></h1>
 		<br>
 		<table>
 		<tr>
