@@ -21,8 +21,6 @@ function validateform() {
   let slot = document.forms["assign form"]["date"].value;
   let x = document.forms["assign form"]["slot"].value;
   let y = document.forms["assign form"]["dj"].value;
-  console.log(slot, x);
-  console.log(y);
   let test = 0;
   if (x == "") {
     test = 1
@@ -30,7 +28,6 @@ function validateform() {
   if (y == "") {
     test = test + 2
   }
-  console.log(test)
   switch (test){
     case 0:
     today[x]=y;
@@ -55,10 +52,19 @@ function validatedate() {
   console.log(slot);
   document.getElementById("date title").textContent=slot;
 }
-
-let today = {
-  1: "James masons long name",
-  2: "P2",
-  3: "P3",
-  4: "David"
+class schedule{
+  constructor(slot1, slot2, slot3, slot4){
+    this[1] = slot1;
+    this[2] = slot2;
+    this[3] = slot3;
+    this[4] = slot4;
+  }
 }
+
+
+let today = new schedule( 
+  "James masons long name",
+  "P2",
+  "P3",
+  "David"
+)

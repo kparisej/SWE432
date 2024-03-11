@@ -15,7 +15,6 @@ function validateform() {
   if (y == "") {
     test = test + 2
   }
-  console.log(test)
   switch (test){
 	  case 1:
 		alert("Producer must be filled out");
