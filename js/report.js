@@ -9,8 +9,11 @@ function validateform() {
   let x = document.forms["reportform"]["producer"].value;
   let y = document.forms["reportform"]["dj"].value;
   let test = 0;
-  if (x == "") {
-    test = 1
+  if (x != "") {
+    test = 0
+  }
+  else{
+    test = 1;
   }
   if (y == "") {
     test = test + 2

@@ -13,6 +13,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
   el.addEventListener("change", function handleChange(event) {
     validatedate();
   });
+
+
+  let table = document.getElementById("time table");
+  time = 0;
+  for (let i = 0; i < 4; i++) {
+    let tr = document.createElement('tr');
+    
+
+    let td = document.createElement('td');
+    td.textContent = time + ":00-"+(time+6)+":00";
+    time = time+6;
+    tr.appendChild(td);
+    let td2 = document.createElement('td');
+    td2.textContent = todays[i+1];
+    tr.appendChild(td2);
+
+    
+    table.appendChild(tr);
+  }
 });
 
 
@@ -30,8 +49,8 @@ function validateform() {
   }
   switch (test){
     case 0:
-    today[x]=y;
-    console.log(today);
+    todays[x]=y;
+    console.log(todays);
     return true;
 	  case 1:
 		alert("Time Slot must be filled out");
@@ -61,8 +80,7 @@ class schedule{
   }
 }
 
-
-let today = new schedule( 
+let todays = new schedule( 
   "James masons long name",
   "P2",
   "P3",
