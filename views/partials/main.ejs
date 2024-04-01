@@ -1,0 +1,76 @@
+<section class="containerBody">
+    <div class="greyer a4">
+		<h1>Assign DJ Timeslot</h1>
+		<nav>
+			<ul style="list-style-type:none;">
+				<li href="/">Assign DJ Timeslot</li>
+				<li onclick="location.href ='/report';">Run a Report</li>
+			</ul> 
+		</nav>
+	 </div>
+	 <div class="b1"></div>
+	 <div class="b2"></div>
+	 <div class="b3" id="form">
+		<form name="assign form"> <!--onsubmit="return validateForm()" method="post" action=""-->
+			<h1>Pick Date</h1>
+			<br>
+			<p>
+				<h2>Date:</h2>
+				<input type="date" id="start" name="date" value="2024-07-22" min="2024-01-01" max="2024-12-31" />
+			</p>
+			<br>
+			<p>
+				<h2>Time Slot:</h2>
+				<select name="slot" required style="width:100%;max-width:70%;">
+					<option></option>
+					<option value = 1>0-6</option>
+					<option value = 2>6-12</option>
+					<option value = 3>12-18</option>
+					<option value = 4>18-0</option>
+				</select>
+				<h2>DJ:</h2>
+				<select name="dj" required style="width:100%;max-width:70%;">
+					<option></option>
+					<option>DJ1</option>
+					<option>Really long DJ name for option number 2</option>
+					<option>DJ3</option>
+				</select>
+			</p>
+			<br>
+			<input type="submit" value="Assign DJ" onclick="validateform()">
+			<input type="submit" value="Remove DJ" onclick="validateform()">
+		</form>
+	</div>
+	 <div class="b4">
+		<h1>Assignments</h1>
+		<h1 id="date title"></h1>
+		<br>
+		<table id = "time table">
+		<tr>
+			<th>Time Slot</th>
+			<th>DJ</th>
+		</tr>
+		<!--
+		<tr>
+			<td>00:00-06:00</td>
+			<td id="slot1">James masons long name</td>
+
+		</tr>
+		<tr>
+			<td>06:00-12:00</td>
+			<td id="slot2">P2</td>
+
+		</tr>
+		<tr>
+			<td>12:00-18:00</td>
+			<td id="slot3">P3</td>
+		</tr>
+		<tr>
+
+			<td>18:00-00:00</td>
+			<td id="slot4">David</td>
+		</tr>
+		-->
+		</table>
+	 </div>
+	</section>
