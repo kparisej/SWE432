@@ -1,0 +1,576 @@
+[
+  {
+    "date": "2024-04-01",
+    "day": "Monday",
+    "timeSlots": [
+      {
+        "startTime": "12:00 AM",
+        "endTime": "6:00 AM",
+        "producerName": "Producer 1",
+        "djName": "DJ 1",
+        "producerList": [
+          { "songName": "Song A", "artist": "Artist A" },
+          { "songName": "Song B", "artist": "Artist B" }
+        ],
+        "djList": [
+          {
+            "songName": "Say Goodbye",
+            "artist": "Chris Brown",
+            "genre": "R&B"
+          },
+          { "songName": "Umbrella", "artist": "Rihanna", "genre": "R&B" }
+        ]
+      },
+      {
+        "startTime": "6:00 AM",
+        "endTime": "12:00 PM",
+        "producerName": "Producer 2",
+        "djName": "DJ 2",
+        "producerList": [
+          { "songName": "Song C", "artist": "Artist C" },
+          { "songName": "Song D", "artist": "Artist D" }
+        ],
+        "djList": [
+          { "songName": "Crazy In Love", "artist": "Beyonce", "genre": "R&B" },
+          {
+            "songName": "Hollaback Girl",
+            "artist": "Gwen Stefani",
+            "genre": "Pop"
+          }
+        ]
+      },
+      {
+        "startTime": "12:00 PM",
+        "endTime": "6:00 PM",
+        "producerName": "Producer 2",
+        "djName": "DJ 2",
+        "producerList": [
+          { "songName": "Song E", "artist": "Artist E" },
+          { "songName": "Song F", "artist": "Artist F" }
+        ],
+        "djList": [
+          {
+            "songName": "Don't Stop The Music",
+            "artist": "Rihanna",
+            "genre": "Pop"
+          },
+          {
+            "songName": "The Real Slim Shady",
+            "artist": "Eminem",
+            "genre": "Hip Hop"
+          }
+        ]
+      },
+      {
+        "startTime": "6:00 PM",
+        "endTime": "12:00 AM",
+        "producerName": "Producer 2",
+        "djName": "DJ 2",
+        "producerList": [
+          { "songName": "Song C", "artist": "Artist C" },
+          { "songName": "Song D", "artist": "Artist D" }
+        ],
+        "djList": [
+          { "songName": "Baby", "artist": "Justin Bieber", "genre": "Pop" },
+          {
+            "songName": "Bad Romance",
+            "artist": "Lady Gaga",
+            "genre": "Pop"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-04-02",
+    "day": "Tuesday",
+    "timeSlots": [
+      {
+        "startTime": "12:00 AM",
+        "endTime": "6:00 AM",
+        "producerName": "Producer 3",
+        "djName": "DJ 3",
+        "producerList": [
+          { "songName": "Song I", "artist": "Artist I" },
+          { "songName": "Song J", "artist": "Artist J" }
+        ],
+        "djList": [
+          {
+            "songName": "I Gotta Feeling",
+            "artist": "Black Eyed Peas",
+            "genre": "Pop"
+          },
+          { "songName": "Dynamite", "artist": "Taio Cruz", "genre": "Pop" }
+        ]
+      },
+      {
+        "startTime": "6:00 AM",
+        "endTime": "12:00 PM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          {
+            "songName": "Riptide",
+            "artist": "Vance Joy",
+            "genre": "Alternative Rock"
+          },
+          {
+            "songName": "Eenie Meenie",
+            "artist": "Justin Bieber",
+            "genre": "Pop"
+          }
+        ]
+      },
+      {
+        "startTime": "12:00 PM",
+        "endTime": "6:00 PM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          {
+            "songName": "Nothin' On You",
+            "artist": "B.o.B",
+            "genre": "Hip Hop"
+          },
+          {
+            "songName": "Fire Burning",
+            "artist": "Sean Kingston",
+            "genre": "Pop"
+          }
+        ]
+      },
+      {
+        "startTime": "6:00 PM",
+        "endTime": "12:00 AM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          { "songName": "Gold Digger", "artist": "Kanye", "genre": "Hip Hop" },
+          {
+            "songName": "Beautiful Girls",
+            "artist": "Sean Kingston",
+            "genre": "R&B"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-04-03",
+    "day": "Wednesday",
+    "timeSlots": [
+      {
+        "startTime": "12:00 AM",
+        "endTime": "6:00 AM",
+        "producerName": "Producer 3",
+        "djName": "DJ 3",
+        "producerList": [
+          { "songName": "Song I", "artist": "Artist I" },
+          { "songName": "Song J", "artist": "Artist J" }
+        ],
+        "djList": [
+          {
+            "songName": "Temperature",
+            "artist": "Sean Paul",
+            "genre": "Reggae"
+          },
+          {
+            "songName": "Toxic",
+            "artist": "Britney Spears",
+            "genre": "Pop"
+          }
+        ]
+      },
+      {
+        "startTime": "6:00 AM",
+        "endTime": "12:00 PM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          { "songName": "Low", "artist": "Flo Rida", "genre": "R&B" },
+          {
+            "songName": "Sexy Back",
+            "artist": "Justin Timberlake",
+            "genre": "R&B"
+          }
+        ]
+      },
+      {
+        "startTime": "12:00 PM",
+        "endTime": "6:00 PM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          { "songName": "Pon De Play", "artist": "Rihanna", "genre": "Reggae" },
+          {
+            "songName": "I Want It That Way",
+            "artist": "Backstreet Boys",
+            "genre": "Pop"
+          }
+        ]
+      },
+      {
+        "startTime": "6:00 PM",
+        "endTime": "12:00 AM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          {
+            "songName": "Sugar, We're Goin Down",
+            "artist": "Fall Out Boy",
+            "genre": "Pop Punk"
+          },
+          { "songName": "Let Me Love You", "artist": "Mario", "genre": "R&B" }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-04-04",
+    "day": "Thursday",
+    "timeSlots": [
+      {
+        "startTime": "12:00 AM",
+        "endTime": "6:00 AM",
+        "producerName": "Producer 3",
+        "djName": "DJ 3",
+        "producerList": [
+          { "songName": "Song I", "artist": "Artist I" },
+          { "songName": "Song J", "artist": "Artist J" }
+        ],
+        "djList": [
+          { "songName": "Replay", "artist": "Iyaz", "genre": "Reggae" },
+          {
+            "songName": "Promiscuous",
+            "artist": "Nelly Furtado",
+            "genre": "Pop"
+          }
+        ]
+      },
+      {
+        "startTime": "6:00 AM",
+        "endTime": "12:00 PM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          {
+            "songName": "I Write Sins Not Tragedies",
+            "artist": "Panic! At The Disco",
+            "genre": "Pop Punk"
+          },
+          { "songName": "Live Your Life", "artist": "T.I.", "genre": "Hip Hop" }
+        ]
+      },
+      {
+        "startTime": "12:00 PM",
+        "endTime": "6:00 PM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          {
+            "songName": "Whatcha Say",
+            "artist": "Jason Derulo",
+            "genre": "Pop"
+          },
+          { "songName": "Down", "artist": "Jay Sean", "genre": "R&B" }
+        ]
+      },
+      {
+        "startTime": "6:00 PM",
+        "endTime": "12:00 AM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          {
+            "songName": "Kiss Me Thru The Phone",
+            "artist": "Soulja Boy",
+            "genre": "Hip Hop"
+          },
+          {
+            "songName": "How To Save a Life",
+            "artist": "The Fray",
+            "genre": "Pop Rock"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-04-05",
+    "day": "Friday",
+    "timeSlots": [
+      {
+        "startTime": "12:00 AM",
+        "endTime": "6:00 AM",
+        "producerName": "Producer 3",
+        "djName": "DJ 3",
+        "producerList": [
+          { "songName": "Song I", "artist": "Artist I" },
+          { "songName": "Song J", "artist": "Artist J" }
+        ],
+        "djList": [
+          { "songName": "Don't Matter", "artist": "Akon", "genre": "Pop" },
+          { "songName": "Stronger", "artist": "Kanye", "genre": "Hip Hop" }
+        ]
+      },
+      {
+        "startTime": "6:00 AM",
+        "endTime": "12:00 PM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          {
+            "songName": "Since U Been Gone",
+            "artist": "Kelly Clarkson",
+            "genre": "Pop"
+          },
+          { "songName": "Get Busy", "artist": "Sean Paul", "genre": "Reggae" }
+        ]
+      },
+      {
+        "startTime": "12:00 PM",
+        "endTime": "6:00 PM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          { "songName": "Payphone", "artist": "Maroon 5", "genre": "Pop" },
+          {
+            "songName": "Stereo Hearts",
+            "artist": "Gym Class Heroes",
+            "genre": "Pop"
+          }
+        ]
+      },
+      {
+        "startTime": "6:00 PM",
+        "endTime": "12:00 AM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          {
+            "songName": "Fireflies",
+            "artist": "Owl City",
+            "genre": "Alternative Rock"
+          },
+          { "songName": "Roar", "artist": "Katy Perry", "genre": "Pop" }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-04-06",
+    "day": "Saturday",
+    "timeSlots": [
+      {
+        "startTime": "12:00 AM",
+        "endTime": "6:00 AM",
+        "producerName": "Producer 3",
+        "djName": "DJ 3",
+        "producerList": [
+          { "songName": "Song I", "artist": "Artist I" },
+          { "songName": "Song J", "artist": "Artist J" }
+        ],
+        "djList": [
+          { "songName": "Firework", "artist": "Katy Perry", "genre": "Pop" },
+          { "songName": "Single Ladies", "artist": "Beyonce", "genre": "R&B" }
+        ]
+      },
+      {
+        "startTime": "6:00 AM",
+        "endTime": "12:00 PM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          { "songName": "Poker Face", "artist": "Lady Gaga", "genre": "Pop" },
+          {
+            "songName": "Don't Stop Believin'",
+            "artist": "The Journey",
+            "genre": "Rock"
+          }
+        ]
+      },
+      {
+        "startTime": "12:00 PM",
+        "endTime": "6:00 PM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          { "songName": "Get Lucky", "artist": "Daft Punk", "genre": "Funk" },
+          {
+            "songName": "Best I Ever Had",
+            "artist": "Drake",
+            "genre": "Hip Hop"
+          }
+        ]
+      },
+      {
+        "startTime": "6:00 PM",
+        "endTime": "12:00 AM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          {
+            "songName": "The Way I Are",
+            "artist": "Timberland",
+            "genre": "Hip Hop"
+          },
+          { "songName": "Paparazzi", "artist": "Lady Gaga", "genre": "Pop" }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-04-07",
+    "day": "Sunday",
+    "timeSlots": [
+      {
+        "startTime": "12:00 AM",
+        "endTime": "6:00 AM",
+        "producerName": "Producer 3",
+        "djName": "DJ 3",
+        "producerList": [
+          { "songName": "Song I", "artist": "Artist I" },
+          { "songName": "Song J", "artist": "Artist J" }
+        ],
+        "djList": [
+          {
+            "songName": "Big Girls Don't Cry",
+            "artist": "Fergie",
+            "genre": "Pop"
+          },
+          {
+            "songName": "Hey, Soul Sister",
+            "artist": "Train",
+            "genre": "Pop Rock"
+          }
+        ]
+      },
+      {
+        "startTime": "6:00 AM",
+        "endTime": "12:00 PM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          {
+            "songName": "I Kissed A Girl",
+            "artist": "Katy Perry",
+            "genre": "Pop"
+          },
+          {
+            "songName": "Use Somebody",
+            "artist": "Kings of Leon",
+            "genre": "Alternative Rock"
+          }
+        ]
+      },
+      {
+        "startTime": "12:00 PM",
+        "endTime": "6:00 PM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          {
+            "songName": "Whenever, Wherever",
+            "artist": "Shakira",
+            "genre": "Latin Pop"
+          },
+          {
+            "songName": "My Humps",
+            "artist": "Black Eyed Peas",
+            "genre": "Hip Hop"
+          }
+        ]
+      },
+      {
+        "startTime": "6:00 PM",
+        "endTime": "12:00 AM",
+        "producerName": "Producer 4",
+        "djName": "DJ 4",
+        "producerList": [
+          { "songName": "Song M", "artist": "Artist M" },
+          { "songName": "Song N", "artist": "Artist N" }
+        ],
+        "djList": [
+          {
+            "songName": "Boom Boom Pow",
+            "artist": "Black Eyed Peas",
+            "genre": "Pop"
+          },
+          {
+            "songName": "Everytime We Touch",
+            "artist": "Cascada",
+            "genre": "Techno"
+          }
+        ]
+      }
+    ]
+  }
+]

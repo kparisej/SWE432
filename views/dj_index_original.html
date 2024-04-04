@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/dj_styling.css" />
+    <title>Mason Radio</title>
+    <script src="/js/dj_script.js"></script>
+    <style>
+      #yourPlaylistTable tbody tr.selected {
+        background-color: #d7b607;
+        color: white;
+      }
+      #yourPlaylistTable tbody tr:hover {
+        background-color: gold;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="flexbox-header">
+      <img src="/res/mason_radio_icon.png" alt="Icon" class="header-icon" />
+      <nav>
+        <ul>
+          <li><a href="">Manager</a></li>
+          <li><a href="">Producer</a></li>
+          <li><a href="">DJ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Welcome to the DJ Center</h1>
+    <h3>
+      Here you'll find the DJ's current set list of the week! Feel free to
+      explore each one and let us know what you think!
+    </h3>
+    <section class="flex-section flex-column">
+      <h2>Week 3/1 - 3/7</h2>
+      <h3>
+        To view MasonRadio's Playlist of the week, please select a day in which
+        you wish to view the setlist.
+      </h3>
+      <article>
+        <button
+          id="mondayButton"
+          class="dayButton"
+          onclick="handleButtonClick('Monday')"
+        >
+          Monday
+        </button>
+        <button id="tuesdayButton" class="dayButton">Tuesday</button>
+        <button id="wednesdayButton" class="dayButton">Wednesday</button>
+        <button id="thursdayButton" class="dayButton">Thursday</button>
+        <button id="fridayButton" class="dayButton">Friday</button>
+        <button id="saturdayButton" class="dayButton">Saturday</button>
+        <button id="sundayButton" class="dayButton">Sunday</button>
+      </article>
+    </section>
+    <section
+      id="mondayPlaylist"
+      class="flex-section flex-column"
+      style="display: none"
+    >
+      <h2>Mason Radio Playlist of the Week</h2>
+      <h3>Monday 3/1</h3>
+      <div class="scrollable-table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Song Title</th>
+              <th>Artist</th>
+              <th>Genre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Song A</td>
+              <td>Artist A</td>
+              <td>Hip-Hop</td>
+            </tr>
+            <tr>
+              <td>Song B</td>
+              <td>Artist B</td>
+              <td>Country</td>
+            </tr>
+            <tr>
+              <td>Song C</td>
+              <td>Artist C</td>
+              <td>RnB</td>
+            </tr>
+            <tr>
+              <td>Song D</td>
+              <td>Artist D</td>
+              <td>Pop</td>
+            </tr>
+            <tr>
+              <td>Song E</td>
+              <td>Artist E</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song F</td>
+              <td>Artist F</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song G</td>
+              <td>Artist G</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song H</td>
+              <td>Artist H</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song I</td>
+              <td>Artist I</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song J</td>
+              <td>Artist J</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song K</td>
+              <td>Artist K</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song L</td>
+              <td>Artist L</td>
+              <td>EDM</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section
+      id="tuesdayPlaylist"
+      class="flex-section flex-column"
+      style="display: none"
+    >
+      <h2>Mason Radio Playlist of the Week</h2>
+      <h3>Tuesday 3/2</h3>
+      <div class="scrollable-table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Song Title</th>
+              <th>Artist</th>
+              <th>Genre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Song M</td>
+              <td>Artist M</td>
+              <td>Hip-Hop</td>
+            </tr>
+            <tr>
+              <td>Song N</td>
+              <td>Artist N</td>
+              <td>Country</td>
+            </tr>
+            <tr>
+              <td>Song O</td>
+              <td>Artist O</td>
+              <td>RnB</td>
+            </tr>
+            <tr>
+              <td>Song P</td>
+              <td>Artist P</td>
+              <td>Pop</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section
+      id="wednesdayPlaylist"
+      class="flex-section flex-column"
+      style="display: none"
+    >
+      <h2>Mason Radio Playlist of the Week</h2>
+      <h3>Wednesday 3/3</h3>
+      <div class="scrollable-table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Song Title</th>
+              <th>Artist</th>
+              <th>Genre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Song Q</td>
+              <td>Artist Q</td>
+              <td>Hip-Hop</td>
+            </tr>
+            <tr>
+              <td>Song R</td>
+              <td>Artist R</td>
+              <td>Country</td>
+            </tr>
+            <tr>
+              <td>Song S</td>
+              <td>Artist S</td>
+              <td>RnB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section
+      id="thursdayPlaylist"
+      class="flex-section flex-column"
+      style="display: none"
+    >
+      <h2>Mason Radio Playlist of the Week</h2>
+      <h3>Thursday 3/4</h3>
+      <div class="scrollable-table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Song Title</th>
+              <th>Artist</th>
+              <th>Genre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Song T</td>
+              <td>Artist T</td>
+              <td>Hip-Hop</td>
+            </tr>
+            <tr>
+              <td>Song U</td>
+              <td>Artist U</td>
+              <td>Country</td>
+            </tr>
+            <tr>
+              <td>Song V</td>
+              <td>Artist V</td>
+              <td>RnB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section
+      id="fridayPlaylist"
+      class="flex-section flex-column"
+      style="display: none"
+    >
+      <h2>Mason Radio Playlist of the Week</h2>
+      <h3>Friday 3/5</h3>
+      <div class="scrollable-table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Song Title</th>
+              <th>Artist</th>
+              <th>Genre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Song W</td>
+              <td>Artist W</td>
+              <td>Hip-Hop</td>
+            </tr>
+            <tr>
+              <td>Song X</td>
+              <td>Artist X</td>
+              <td>Country</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section
+      id="saturdayPlaylist"
+      class="flex-section flex-column"
+      style="display: none"
+    >
+      <h2>Mason Radio Playlist of the Week</h2>
+      <h3>Saturday 3/5</h3>
+      <div class="scrollable-table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Song Title</th>
+              <th>Artist</th>
+              <th>Genre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Song Y</td>
+              <td>Artist Y</td>
+              <td>Hip-Hop</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section
+      id="sundayPlaylist"
+      class="flex-section flex-column"
+      style="display: none"
+    >
+      <h2>Mason Radio Playlist of the Week</h2>
+      <h3>Sunday 3/5</h3>
+      <div class="scrollable-table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Song Title</th>
+              <th>Artist</th>
+              <th>Genre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Song Z</td>
+              <td>Artist Z</td>
+              <td>Hip-Hop</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="flex-section flex-column">
+      <h2>Your Previous Playlist</h2>
+      <div id="yourPlaylistTable" class="scrollable-table-container">
+        <!-- Within each playlist section -->
+        <form id="searchFormYourPlaylist" class="search-form">
+          <input
+            type="text"
+            id="searchInputYourPlaylist"
+            class="search-input"
+            placeholder="Search song..."
+            required
+          />
+          <button type="submit">Search</button>
+        </form>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Song Title</th>
+              <th>Artist</th>
+              <th>Genre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Song A</td>
+              <td>Artist A</td>
+              <td>Hip-Hop</td>
+            </tr>
+            <tr>
+              <td>Song B</td>
+              <td>Artist B</td>
+              <td>Country</td>
+            </tr>
+            <tr>
+              <td>Song C</td>
+              <td>Artist C</td>
+              <td>RnB</td>
+            </tr>
+            <tr>
+              <td>Song D</td>
+              <td>Artist D</td>
+              <td>Pop</td>
+            </tr>
+            <tr>
+              <td>Song E</td>
+              <td>Artist E</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song F</td>
+              <td>Artist F</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song G</td>
+              <td>Artist G</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song H</td>
+              <td>Artist H</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song I</td>
+              <td>Artist I</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song J</td>
+              <td>Artist J</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song K</td>
+              <td>Artist K</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song L</td>
+              <td>Artist L</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Song Z</td>
+              <td>Artist Z</td>
+              <td>EDM</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button id="addSongButton">Add Song</button>
+    </section>
+  </body>
+</html>
