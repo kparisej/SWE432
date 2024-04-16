@@ -334,5 +334,29 @@
     "artist": "Cascada",
     "genre": "Techno",
     "duration": "3:16"
+  },
+  {
+    "songName": "Grenade",
+    "artist": "Bruno Mars",
+    "genre": "Pop",
+    "duration": "3:42"
+  },
+  {
+    "songName": "Love The Way You Lie",
+    "artist": "Rihanna",
+    "genre": "Hip Hop",
+    "duration": "4:27"
+  },
+  {
+    "songName": "Party Rock Anthem",
+    "artist": "LMFAO",
+    "genre": "Electronic Music",
+    "duration": "6:16"
+  },
+  {
+    "songName": "Rolling In The Deep",
+    "artist": "Adele",
+    "genre": "R&B",
+    "duration": "3:48"
   }
 ]
