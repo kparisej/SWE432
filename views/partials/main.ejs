@@ -11,66 +11,83 @@
 	 <div class="b1"></div>
 	 <div class="b2"></div>
 	 <div class="b3" id="form">
-		<form name="assign form"> <!--onsubmit="return validateForm()" method="post" action=""-->
+		<form name="assign form" method="post" action="/" > 
 			<h1>Pick Date</h1>
 			<br>
 			<p>
 				<h2>Date:</h2>
-				<input type="date" id="start" name="date" value="2024-07-22" min="2024-01-01" max="2024-12-31" />
+				<input type="date" id="start" name="date" min="2024-01-01" max="2024-12-31" value=<%=schedule.date%> />
 			</p>
 			<br>
 			<p>
 				<h2>Time Slot:</h2>
-				<select name="slot" required style="width:100%;max-width:70%;">
+				<select name="slot" id="slot" required style="width:100%;max-width:70%;">
 					<option></option>
-					<option value = 1>0-6</option>
-					<option value = 2>6-12</option>
-					<option value = 3>12-18</option>
-					<option value = 4>18-0</option>
+					<option value = 0>0-6</option>
+					<option value = 1>6-12</option>
+					<option value = 2>12-18</option>
+					<option value = 3>18-0</option>
 				</select>
 				<h2>DJ:</h2>
-				<select name="dj" required style="width:100%;max-width:70%;">
+				<input type="text" id="dj" name="dj" style="width:100%;max-width:70%;">
+			</p>
+			<br>
+			<input type="submit" name="button" value="Assign DJ" onclick="validateadd()">
+			<input type="submit" name="button" value="Remove DJ" onclick="validateremove()">
+		</form>
+		<!--
+				<h2>Song:</h2>
+				<select name="songList" required style="width:100%;max-width:70%;" onchange="checkAlert(event)">
 					<option></option>
-					<option>DJ1</option>
-					<option>Really long DJ name for option number 2</option>
-					<option>DJ3</option>
+					<option>*Add New Song</option>
+					<% for(var i=0; i<songs.length; i++) {%>
+						<option><%= songs[i] %></option>
+					 <% } %>
 				</select>
 			</p>
 			<br>
-			<input type="submit" value="Assign DJ" onclick="validateform()">
-			<input type="submit" value="Remove DJ" onclick="validateform()">
+			<input type="submit" value="Add Song" name="button" value="Add Song" onclick="songadder()">
 		</form>
+		<div class="form-popup" id="myForm">
+		<form method="post" name="song add form" action="/" class="form-container">
+			<label for="songName"><b>Song Name</b></label>
+			<input type="text" placeholder="Song Name" name="songName" required>
+	
+			<label for="artist"><b>Artist</b></label>
+			<input type="text" placeholder="Enter Artist" name="artist" required>
+
+			<label for="genre"><b>Genre</b></label>
+			<input type="text" placeholder="Enter Genre" name="genre" required>
+
+			<label for="duration"><b>Duration</b></label>
+			<input type="text" placeholder="Enter Duration" name="duration" required>
+	
+			<input type="submit" class="btn" name="button" value="Add Song" onclick="closeForm()"></button>
+			<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+		</form>
+		</div>
+	-->
 	</div>
 	 <div class="b4">
-		<h1>Assignments</h1>
-		<h1 id="date title"></h1>
+		<h1></h1>
+		<h1 id="date title"><%=schedule.date%></h1>
 		<br>
 		<table id = "time table">
 		<tr>
 			<th>Time Slot</th>
 			<th>DJ</th>
 		</tr>
-		<!--
-		<tr>
-			<td>00:00-06:00</td>
-			<td id="slot1">James masons long name</td>
-
-		</tr>
-		<tr>
-			<td>06:00-12:00</td>
-			<td id="slot2">P2</td>
-
-		</tr>
-		<tr>
-			<td>12:00-18:00</td>
-			<td id="slot3">P3</td>
-		</tr>
-		<tr>
-
-			<td>18:00-00:00</td>
-			<td id="slot4">David</td>
-		</tr>
-		-->
 		</table>
+	</p>
+		<!-- 
+		<form method="post" name="songremove" action="/">
+			<h2>Songs:</h2>
+			<select name="djList" id="djList" required style="width:100%;max-width:70%;" onchange="checkAlert(event)">
+				<option> </option>
+			</select>
+		</p>
+		<br>
+		<input type="submit" name="button" value="Remove Song" onclick="songremover()"> -->
+	</form>
 	 </div>
 	</section>

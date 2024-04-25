@@ -11,76 +11,31 @@
 	 <div class="b1"></div>
 	 <div class="b2"></div>
 	 <div class="b3" id="form">
-		<form name="reportform"> <!--onsubmit="return validateForm()" method="post" action=""-->
+		<form name="reportform" action="javascript:buildtable();">
 			<h1>Report Settings</h1>
 			<br>
 			<p>
 				<h2>Date Range:</h2>
-				<input type="date" id="range start" name="date-start" value="2024-07-22" min="2024-01-01" max="2024-12-31" />
-				<input type="date" id="range end" name="date-end" value="2024-07-22" min="2024-01-01" max="2024-12-31" />
+				<input type="date" id="date-report" name="date-report" value="" min="2024-01-01" max="2024-12-31" onchange="dater()"/>
 			</p>
 			<br>
 			<p>
-				<h2>Producer:</h2>
-				<select name="producer" required style="width:100%;max-width:70%;">
-					<option></option>
-					<option>P1</option>
-					<option>Really long producer name 2</option>
-					<option>P3</option>
-				</select>
-			</p>
-			<br>
 			<p>
-				<h2>DJ:</h2>
-				<select name="dj" required style="width:100%;max-width:70%;">
+				<h2>Time Slot:</h2>
+				<select id="selectslot" required style="width:100%;max-width:70%;" onchange=""/>
 					<option></option>
-					<option>DJ1</option>
-					<option>Really long DJ name for option number 2</option>
-					<option>DJ3</option>
-				</select>
+				  </select>
+			</p>
 			</p>
 			<br>
 			<input id="run" type="submit" value="Run Report">
+			</form>
 	</div>
 	 <div class="b4">
 		<h1>Report</h1>
 		<br>
-		<table>
-		<tr>
-			<th>Same Songs</th>
-			<th>Producer Songs</th>
-			<th>DJ Songs</th>
-		</tr>
-		<tr>
-			<td>SS1</td>
-			<td>Franz Ferdinand Fire</td>
-			<td>White Stripes Doorbell</td>
-		</tr>
-		<tr>
-			<td>SS2</td>
-			<td>P2</td>
-			<td>Aerosmith Living on the Edge</td>
-		</tr>
-		<tr>
-			<td>SS3</td>
-			<td>P3</td>
-			<td>DJ3</td>
-		</tr>
-		<tr>
-			<td>The name of a really long song on both lists</td>
-			<td>P4</td>
-			<td>Helen Bennett</td>
-		</tr>
-		<tr>
-			<td>SS5</td>
-			<td>P5</td>
-			<td>DJ4</td>
-		</tr>
-		<tr>
-			<td>SS6</td>
-			<td>Another really long song name to see how it fits on the table</td>
-			<td>DJ5</td>
-		</tr>
-		</table>
+		<p>Songs That DJ Played in line with producer: </p><p id="countSame"></p>
+		<p>Songs That DJ Played NOT in line with producer: </p><p id="countDif"></p>
+		<p>Songs That DJ Skipped: </p><p id="countSkip"></p>
 	 </div>
 	</section>
