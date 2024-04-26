@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mason Radio</title>
+    <link rel="stylesheet" href="/css/dj_styling.css" />
+    <script src="/js/dj_script.js"></script>
+    <style>
+      #yourPlaylistTable tbody tr.selected {
+        background-color: #d7b607;
+        color: white;
+      }
+      #yourPlaylistTable tbody tr:hover {
+        background-color: gold;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="flexbox-header">
+      <img src="/res/mason_radio_icon.png" alt="Icon" class="header-icon" />
+      <nav>
+        <ul>
+          <li class="nav-bar"><a href="">Manager</a></li>
+          <li class="nav-bar"><a href="">Producer</a></li>
+          <li class="nav-bar"><a href="">DJ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Welcome to the DJ Center</h1>
+    <h3>
+      Here you'll find the DJ's current set list of the week! Feel free to
+      explore each one and let us know what you think!
+    </h3>
+    <section class="flex-section flex-column">
+      <h3>
+        To view MasonRadio's Playlist, please select a day in which you wish to
+        view the setlist.
+      </h3>
+      <article>
+        <label for="datepicker" class="date-picker-label">Select a date:</label>
+        <div class="date-picker">
+          <input type="date" id="datepicker" />
+          <label for="datepicker" class="calendar-icon">&#x1F4C5;</label>
+        </div>
+        <button id="submitDateButton">Submit</button>
+      </article>
+    </section>
+    <section id="masonPlaylistTable" class="flex-section flex-column">
+      <h2>Mason Radio Playlist</h2>
+      <div class="scrollable-table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Song Title</th>
+              <th>Artist</th>
+              <th>Genre</th>
+              <th>Time Slot</th>
+            </tr>
+          </thead>
+          <tbody id="masonPlaylistTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="flex-section flex-column">
+      <h2>Your Previous Playlist</h2>
+      <form id="searchFormYourPlaylist" class="search-form">
+        <input
+          type="text"
+          id="searchInputYourPlaylist"
+          class="search-input"
+          placeholder="Search by song name, artist, or genre..."
+          required
+          style="width: 225px"
+        />
+        <button type="submit">Search</button>
+      </form>
+      <div id="yourPlaylistTable" class="scrollable-table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Song Title</th>
+              <th>Artist</th>
+              <th>Genre</th>
+            </tr>
+          </thead>
+          <tbody id="yourPlaylistTableBody"></tbody>
+        </table>
+      </div>
+      <section id="timeslotSection">
+        <form id="timeslotForm">
+          <label for="timeSlot">Select Time Slot:</label>
+          <select id="timeSlot" name="timeSlot">
+            <option value="12:00 AM - 6:00 AM">12:00 AM - 6:00 AM</option>
+            <option value="6:00 AM - 12:00 PM">6:00 AM - 12:00 PM</option>
+            <option value="12:00 PM - 6:00 PM">12:00 PM - 6:00 PM</option>
+            <option value="6:00 PM - 12:00 AM">6:00 PM - 12:00 AM</option>
+          </select>
+          <br />
+        </form>
+      </section>
+      <button id="addSongButton">Add Song</button>
+    </section>
+  </body>
+  <footer style="background-color: #046a38; padding: 20px">
+    Copyright &#169; 2024 GMU
+  </footer>
+</html>
