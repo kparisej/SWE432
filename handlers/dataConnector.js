@@ -4,7 +4,7 @@ const connect = () => {
   const opt = {
     useUnifiedTopology: true,
     useNewUrlParser: true,
-    dbName: "SWE432",
+    dbName: "Project",
   };
   console.log("starting to connect to mongo ...");
   mongoose.connect(process.env.MONGO_URL, opt);
