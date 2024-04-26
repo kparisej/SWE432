@@ -1,0 +1,180 @@
+* {
+    margin: 0px;
+}
+
+/* Login forms */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.login-form h1 {
+    padding-bottom: 20px;
+}
+
+.button-field {
+    margin-top: 10px; 
+    width: 100%; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.button-field button {
+    margin-left: 10px;
+}
+/* Navigation Bar */
+.nav-bar {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .nav-bar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    min-width: 70px; /* Ensure minimum width for all buttons */
+    background-color: black;
+    color: gold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+  .nav-bar a:hover {
+    background-color: #333;
+  }
+  .flexbox-header {
+    background-color: #046a38;
+    color: gold;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+  }
+  .header-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+    border: 2px solid black;
+  }
+
+.title {
+    text-align: center;
+}
+.title h1{
+    font-size: 50px;
+}
+
+/* Main Body */
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Tables*/
+/* Style the schedule section */
+.schedule {
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Style the table */
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Style table headers and cells */
+.schedule th, .schedule td {
+    padding: 10px;
+    width: 100px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style table header */
+.schedule th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* Style date row on hover */
+.date-row:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+
+
+/*Playlist STuff*/
+.playlist-title {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.playlist-title h2 {
+    margin-right: 10px; /* Add space between the headers */
+}
+
+.playlist {
+    display: flex;
+    justify-content: space-around; /* Adjust alignment as needed */
+    align-items: flex-start; /* Align items at the top */
+}
+.song-row td {
+    padding: 10px; /* Adjust padding as needed */
+    text-align: center;
+    vertical-align: middle;
+}
+
+.search{
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.search th, .search td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    width: 100px;
+}
+
+.playlist-button {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    margin: 20px;
+}
+
+.playlist-button button {
+    margin: 10px 10px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5; /* Optional background color */
+    text-align: center;
+    padding: 10px; /* Optional padding */
+}

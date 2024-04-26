@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body>
+    <header class="flexbox-header">
+       <%- include('../partials/header'); %>
+    </header>
+
+    <div class="title">
+        <h1>Playlist Manager</h1>
+    </div>
+    <div class="playlist-title">
+        <h2><%= timeSlot.djName %>: </h2>
+        <h3><%= timeSlot.startTime %> - <%= timeSlot.endTime %></h3>
+    </div>
+    <div class="playlist-button">
+        <button id="doneButton" type="submit">DONE</button>
+    </div>
+    <div class="playlist">
+        <section class="search">
+            <h2>Playlist</h2>
+            <input type="text" id="searchInput1" placeholder="Search...">
+            <table>
+                <thead>
+                    <tr class="song-row">
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Genre</th>
+                        <th>Duration</th>
+                        <th>            </th>
+                    </tr>
+                </thead>
+                <tbody id="songBody1">
+                    <% timeSlot.producerList.forEach((song, producerIndex) => { %>
+                        <tr class="song-row">
+                            <td><%= song.songName %></td>
+                            <td><%= song.artist %></td>
+                            <td><%= song.genre %></td>
+                            <td><%= song.duration %></td>
+                            <td><button onclick="removeSong('<%= producerIndex %>', '<%= dateId %>', '<%= slotIndexInt %>')">REMOVE</button></a></td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+
+
+
+        </section>
+        <section class="search">
+            <h2>Song Search</h2>
+            <input type="text" id="searchInput2" placeholder="Search...">
+            <table>
+                <thead>
+                    <tr class="song-row">
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Genre</th>
+                        <th>Duration</th>
+                        <th>            </th>
+                    </tr>
+                </thead>
+                <tbody id="songBody2">
+                    <% song.forEach(song => { %>
+                    <tr class="song-row">
+                        <td><%= song.songName %></td>
+                        <td><%= song.artist %></td>
+                        <td><%= song.genre %></td>
+                        <td><%= song.duration %></td>
+                        <td><button onclick="addSong('<%= song._id %>', '<%= dateId %>', '<%= slotIndexInt %>')">ADD</button></td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    
+
+    <script src="../../public/js/script-playlist.js"></script>
+</body>
+
+
+<footer>
+
+</footer>
+
+</html>
