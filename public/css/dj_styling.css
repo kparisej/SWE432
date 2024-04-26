@@ -9,20 +9,20 @@ body {
   margin-right: 20px;
 }
 .nav-bar a {
-  padding: 10px 20px; /* Adjust padding to make the buttons larger */
+  padding: 10px 20px;
   background-color: black;
   color: gold;
   border-radius: 5px;
   text-decoration: none;
 }
 .nav-bar a:hover {
-  background-color: #333; /* Change color on hover */
+  background-color: #333;
 }
 .flexbox-header {
   background-color: #046a38;
   color: gold;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   position: relative;
   border-bottom: 1px solid #333;
   margin-bottom: 20px;
@@ -97,7 +97,7 @@ th {
 .scrollable-table-container table thead {
   position: sticky;
   top: 0;
-  background-color: #ffffff; /* Adjust as needed */
+  background-color: #ffffff;
   z-index: 1;
 }
 .scrollable-table-container::-webkit-scrollbar {
@@ -197,7 +197,6 @@ a:hover {
 #timeslotSection {
   text-align: center;
 }
-/* Style the select element */
 #timeSlot {
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -209,19 +208,16 @@ a:hover {
   width: 200px;
 }
 
-/* Style the dropdown arrow */
 #timeSlot {
   appearance: none;
   background-repeat: no-repeat;
   background-position: right 8px center;
 }
 
-/* Hover effect */
 #timeSlot:hover {
   background-color: #f0f0f0;
 }
 
-/* Focus styles */
 #timeSlot:focus {
   border-color: #007bff;
   box-shadow: 0 0 3px #007bff;
@@ -229,5 +225,6 @@ a:hover {
 }
 
 #yourPlaylistTable {
+  margin-top: 15px;
   margin-bottom: 20px;
 }

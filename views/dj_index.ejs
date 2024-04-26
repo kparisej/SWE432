@@ -56,7 +56,7 @@
               <th>Song Title</th>
               <th>Artist</th>
               <th>Genre</th>
-              <th>Timeslot</th>
+              <th>Time Slot</th>
             </tr>
           </thead>
           <tbody id="masonPlaylistTableBody"></tbody>
@@ -65,17 +65,18 @@
     </section>
     <section class="flex-section flex-column">
       <h2>Your Previous Playlist</h2>
+      <form id="searchFormYourPlaylist" class="search-form">
+        <input
+          type="text"
+          id="searchInputYourPlaylist"
+          class="search-input"
+          placeholder="Search by song name, artist, or genre..."
+          required
+          style="width: 225px"
+        />
+        <button type="submit">Search</button>
+      </form>
       <div id="yourPlaylistTable" class="scrollable-table-container">
-        <form id="searchFormYourPlaylist" class="search-form">
-          <input
-            type="text"
-            id="searchInputYourPlaylist"
-            class="search-input"
-            placeholder="Search song..."
-            required
-          />
-          <button type="submit">Search</button>
-        </form>
         <table>
           <thead>
             <tr>
@@ -91,10 +92,10 @@
         <form id="timeslotForm">
           <label for="timeSlot">Select Time Slot:</label>
           <select id="timeSlot" name="timeSlot">
-            <option value="12:00AM - 6:00AM">12AM - 6AM</option>
-            <option value="6:00AM - 12:00PM">6AM - 12PM</option>
-            <option value="12:00PM - 6:00PM">12PM - 6PM</option>
-            <option value="6:00PM - 12:00AM">6PM - 12AM</option>
+            <option value="12:00 AM - 6:00 AM">12:00 AM - 6:00 AM</option>
+            <option value="6:00 AM - 12:00 PM">6:00 AM - 12:00 PM</option>
+            <option value="12:00 PM - 6:00 PM">12:00 PM - 6:00 PM</option>
+            <option value="6:00 PM - 12:00 AM">6:00 PM - 12:00 AM</option>
           </select>
           <br />
         </form>
@@ -102,4 +103,7 @@
       <button id="addSongButton">Add Song</button>
     </section>
   </body>
+  <footer style="background-color: #046a38; padding: 20px">
+    Copyright &#169; 2024 GMU
+  </footer>
 </html>
