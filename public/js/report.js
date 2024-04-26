@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 async function dater() {
+  document.getElementById("selectslot").innerHTML = "";
   let x = document.forms["reportform"]["date-report"].value;
   try{
     sched = await fetch('date?' + new URLSearchParams({
