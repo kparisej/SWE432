@@ -6,27 +6,46 @@ figcaption, h1, h2, h3, ul, li, body, div, p, img
  font-size: 100%; 
  vertical-align: baseline; 
  border: 0; 
-} 
-.containerHead {
+ font-family: Arial, sans-serif;
+
+}
+body {
+	background-color: #046a38;
+}
+
+
+.containerHead{
+	background-color: #046a38;
+}
+/*.containerHead {
 	grid-gap: 0px;
 	display: grid;
-	/*grid-template-rows: 100px 150px auto; grid-auto-rows: 25vh;*/
 	grid-template-rows: 15vh;
 	width: 100%;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas: "a1 a2 a2 a2 a3";
-   }
+   }*/
 .containerBody {
+	background-color: #ffffff;
 	grid-gap: 0px;
 	display: grid;
 	/*grid-template-rows: 100px 150px auto; grid-auto-rows: 25vh;*/
-	grid-template-rows: 15vh 70vh;
+	grid-template-rows: 11vh 75vh;
 	width: 100%;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas: 
 	"a4 a4 a4 a4 a4"
 	"b1 b3 b4 b4 b2";
    }
+   a {
+	text-decoration:none;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr:nth-child(odd) {
+  background-color: #bcbcbc;
+}
 [class*="green"] {
 	background: #006633;
 }
@@ -34,7 +53,8 @@ figcaption, h1, h2, h3, ul, li, body, div, p, img
 background: rgb(125, 155, 127);
 }
 h1{
-	font-size: 2em;
+	font-size: 1.4em;
+	color:#ffcc33;
 }
 div, li{
  transition-property: background-color;
@@ -42,7 +62,8 @@ div, li{
  transition-timing-function: ease-out;
  transition-delay: 0s;
 }
-ul {
+
+.menu1 {
  cursor: pointer;
  display: flex;
  flex-direction: row;
@@ -51,7 +72,7 @@ ul {
  padding: 1vh;
 }
 
-li {
+.menu1 li {
 	flex: 1 1 auto;
 	margin: 0 10px;
 	width: 50px;
@@ -60,8 +81,11 @@ li {
 	border-width: 5px;
 	border-radius: 15px; */
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.2em;
 	clip-path: polygon(20px 0, 100% 0, calc(100% - 20px) 100%, 0px 100%);
+}
+.menu1{
+margin:0 200px 0 200px;
 }
 li:hover {
 	background-color: #ffcc33;
@@ -127,7 +151,6 @@ table{
   .form-container .btn {
 	background-color: #04AA6D;
 	color: white;
-
 	border: none;
 	cursor: pointer;
 	width: 80%;
@@ -144,3 +167,47 @@ table{
   .form-container .btn:hover, .open-button:hover {
 	opacity: 1;
   }
+
+
+
+  .nav-bar {
+	display: inline-block;
+	margin-right: 20px;
+  }
+  .nav-bar a {
+	padding: 10px 20px; /* Adjust padding to make the buttons larger */
+	background-color: black;
+	color: gold;
+	border-radius: 5px;
+	text-decoration: none;
+  }
+  .nav-bar a:hover {
+	background-color: #333; /* Change color on hover */
+  }
+  .flexbox-header {
+	background-color: #046a38;
+	color: gold;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	margin-bottom: 20px;
+  }
+  .header-icon {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 80px;
+	height: 80px;
+  }
+
+
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+  }
+  

@@ -21,6 +21,7 @@ const uri = "mongodb+srv://thecodyweller:qS2mwjbX8A3loDEE@mason.zdtoibt.mongodb.
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, { serverApi: { version: '1' } });
 
+
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
@@ -45,7 +46,7 @@ async function getSchedule(client, tdate) {
       return true;
   } else {
     schedule ={
-      date: today
+      date: tdate
     }
       return false;
   }
@@ -76,10 +77,12 @@ async function addDJ(client, day, slot, dj) {
 
   else{
     var timeSlots = [4]
-     timeSlots[0]={startTime: "12:00 AM",endTime:"6:00 AM"};
-     timeSlots[1]={startTime: "6:00 AM",endTime:"12:00 PM"};
-     timeSlots[2]={startTime: "12:00 PM",endTime:"6:00 PM"}; 
-     timeSlots[3]={startTime: "6:00 PM",endTime:"12:00 AM"};
+    var producerList =[];
+    var djList = [];
+     timeSlots[0]={startTime: "12:00 AM",endTime:"6:00 AM",producerName:"",djName:"",producerList,djList};
+     timeSlots[1]={startTime: "6:00 AM",endTime:"12:00 PM",producerName:"",djName:"",producerList,djList};
+     timeSlots[2]={startTime: "12:00 PM",endTime:"6:00 PM",producerName:"",djName:"",producerList,djList}; 
+     timeSlots[3]={startTime: "6:00 PM",endTime:"12:00 AM",producerName:"",djName:"",producerList,djList};
     timeSlots[slot].djName = dj;
   const updateDocument = {
     $set: { 

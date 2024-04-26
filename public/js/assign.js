@@ -47,7 +47,6 @@ function schedulebuilder(sched){
     time = time+6;
     tr.appendChild(td);
     let td2 = document.createElement('td');
-    console.log(sched);
     if (sched==undefined){
       td2.textContent = ""
     }
